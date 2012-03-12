@@ -1,0 +1,10 @@
+## SimplyAgile
+Last Rev: 3/11/2012
+By: Mike MacMillan (macmillanmikej@gmail.com)
+
+# Scrum & Kanban tracking board.
+
+This is an attempt for me to pickup PHP again. The goal of this project is to implement a well-designed board to be used for distributed teams performing either Kanban or Scrum.
+
+Reporting, User Management, and Ease-Of-Use are values that are important while developing on this project.
+
