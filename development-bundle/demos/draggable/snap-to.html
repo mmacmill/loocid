@@ -1,9 +1,15 @@
-<html>
- <head>
-  <title>Loocid v1.0 - Simple Scrum & Kanban Tracking Tool</title>
-		<link type="text/css" href="css/cupertino/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Draggable - Snap to element or grid</title>
+	<link rel="stylesheet" href="../../themes/base/jquery.ui.all.css">
+	<script src="../../jquery-1.7.1.js"></script>
+	<script src="../../ui/jquery.ui.core.js"></script>
+	<script src="../../ui/jquery.ui.widget.js"></script>
+	<script src="../../ui/jquery.ui.mouse.js"></script>
+	<script src="../../ui/jquery.ui.draggable.js"></script>
+	<link rel="stylesheet" href="../demos.css">
 	<style>
 	.draggable { width: 90px; height: 80px; padding: 5px; float: left; margin: 0 10px 10px 0; font-size: .9em; }
 	.ui-widget-header p, .ui-widget-content p { margin: 0; }
@@ -24,7 +30,7 @@
 <div class="demo">
 	
 <div id="snaptarget" class="ui-widget-header">
-	<p>Task Board</p>
+	<p>I'm a snap target</p>
 </div>
 
 <br clear="both" />
@@ -57,11 +63,6 @@
 <p>Snap the draggable to the inner or outer boundaries of a DOM element.  Use the <code>snap</code>, <code>snapMode</code> (inner, outer, both), and <code>snapTolerance</code> (distance in pixels the draggable must be from the element when snapping is invoked) options. </p>
 <p>Or snap the draggable to a grid.  Set the dimensions of grid cells (height and width in pixels) with the <code>grid</code> option.</p>
 </div><!-- End demo-description -->
-<div>
-</div>
-<hr />
-Below is information for debugging and PHP validation:
-<?php phpinfo(); ?>
 
 </body>
 </html>
