@@ -1,10 +1,22 @@
+ 
 <html>
  <head>
-  <title>Loocid v1.0 - Simple Scrum & Kanban Tracking Tool</title>
+  <title>Loocid v1.0 - Simple Scrum and Kanban Tracking Tool</title>
 		<link type="text/css" href="css/cupertino/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
 		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+	
+		<style type="text/css">
+		.myNewStyle {
+		font-family: Verdana, Arial, Helvetica;
+		font-weight: bold;
+		color: #FF0000;
+		}
+		</style>
+
+
 	<style>
+
 	.draggable { width: 90px; height: 80px; padding: 5px; float: left; margin: 0 10px 10px 0; font-size: .9em; }
 	.ui-widget-header p, .ui-widget-content p { margin: 0; }
 	#snaptarget { height: 140px; }
@@ -21,8 +33,23 @@
 </head>
 <body>
 
+<p class=".myNewStyle">This is my styled text</p>
+
+<form method="post" action="<?php echo $PHP_SELF;?>">
+Name of Project: <input type="text" size="12" maxlength="12" name="frmPrjName"/>
+</form>
+
+<?PHP
+
+$projectName = $_POST['frmPrjName'];
+print("Your project name is ($projectName)");
+
+?>
+
+
+<br>
+<hr>
 <div class="demo">
-	
 <div id="snaptarget" class="ui-widget-header">
 	<p>Task Board</p>
 </div>
@@ -50,18 +77,13 @@
 </div>
 
 </div><!-- End demo -->
-
-
-
-<div class="demo-description">
-<p>Snap the draggable to the inner or outer boundaries of a DOM element.  Use the <code>snap</code>, <code>snapMode</code> (inner, outer, both), and <code>snapTolerance</code> (distance in pixels the draggable must be from the element when snapping is invoked) options. </p>
-<p>Or snap the draggable to a grid.  Set the dimensions of grid cells (height and width in pixels) with the <code>grid</code> option.</p>
-</div><!-- End demo-description -->
+<br><br>
+<br><br><br><br>
 <div>
-</div>
 <hr />
 Below is information for debugging and PHP validation:
 <?php phpinfo(); ?>
+</div>
 
 </body>
 </html>
